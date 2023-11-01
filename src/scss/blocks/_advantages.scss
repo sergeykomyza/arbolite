@@ -1,0 +1,62 @@
+.advantages{
+
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 95px;
+    color: var(--color-0);
+
+    &__bg{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 1440px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title{
+        margin-bottom: 5px;
+    }
+
+    &__tagtitle{
+        margin-bottom: 25px;
+    }
+
+    &__box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 30px;
+    }
+
+}
+
+.advantage{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    background: var(--color-4);
+    border-radius: 12px;
+
+    &__icon{
+        margin-bottom: 37px;
+    }
+
+    &__title{
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    &__text{
+        line-height: 22px;
+        opacity: 0.7;
+    }
+
+}

@@ -1,0 +1,39 @@
+-
+    const products = [
+        {img: 'product-0.webp', name: 'Газоблок 200*300*600мм', price: '6 900'},
+        {img: 'product-1.webp', name: 'Газоблок 250*300*600мм', price: '5 450'},
+        {img: 'product-2.webp', name: 'Газоблок 300*300*600мм', price: '6 400'},
+        {img: 'product-3.webp', name: 'Газоблок 400*300*600мм', price: '4 800'},
+        {img: 'product-0.webp', name: 'Газоблок 400*300*600мм', price: '4 800'}
+    ]
+
+section.catalog#catalog
+    .container 
+        h3.title.catalog__title #[b Каталог материалов] под любой бюджет
+        p.tagtitle.catalog__tagtitle Соблюдение всех #[b технических условий и ГОСТ]
+
+        .tabs
+            .tabs__headerbox
+                .runner
+                .tabs__header
+                    each item in ['Газоблок','Арболит','Керамический блок']
+                        button.tabs__button.js-tabBtn
+                            span.tabs__name= item
+
+            each tab, t in [1, 2, 3]
+                .tabs__content
+                    .product__slider
+                        .swiper.overflow-visible.js-sliderProducts  
+                            .swiper-wrapper
+                                each item in products 
+                                    .swiper-slide
+                                        .product
+                                            img.product__img(src="img/" + item.img, alt="@")
+                                            h6.product__name= item.name 
+                                            p.product__descr Стеновой блок
+                                            .product__price= `${6+t} 900` 
+                                                span.product__price--val  / m3
+                                            .product__buttonbox 
+                                                button.button.product__button Заказать
+                                                    include ./../layouts/_iconBlueArrowInButton.pug
+                            .swiper-pagination

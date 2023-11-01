@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.1/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Продажа пеноблока и газоблока</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__info">
+        <div class="container">
+          <div class="header__box">
+            <div class="header__logo"> 
+              <figure class="logo"><img class="logo__img" src="img/logo.svg" alt="@"/>
+                <div class="desktop">
+                  <figcaption class="logo__text">Поставщик газоблоков, <br/> пеноблоков и арболита</figcaption>
+                </div>
+              </figure>
+            </div>
+            <div class="desktop">
+              <div class="social"><span class="social__text">Спрашивайте, <br/> мы онлайн</span>
+                <div class="social__icons"> <a class="social__link" href="@"><img class="social__icon" src="img/telegram.svg" alt="@"/></a><a class="social__link" href="@"><img class="social__icon" src="img/whatsapp.svg" alt="@"/></a></div>
+              </div>
+            </div>
+            <div class="desktop">
+              <div class="header-mail"><span class="header-mail__text">Электронная почта</span><a class="header-mail__adress" href="mailto:arbolitstroy.pro@yandex.ru">arbolitstroy.pro@yandex.ru</a></div>
+            </div>
+            <div class="desktop">
+              <div class="header-phone"> <a class="header-phone__number" href="tel:+79165714808">+7 (916) 571-48-08</a>
+                <button class="header-phone__ordercall" data-fancybox="data-fancybox" data-src="#form">Заказать звонок </button>
+              </div>
+            </div>
+            <div class="mobile"> 
+              <div class="header__burger js-openMenu"><span></span><span></span><span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="menu__list"> 
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#catalog">Продукция</a></li>
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#advantages">О нас</a></li>
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#">Доставка</a></li>
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#">Акции</a></li>
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#reviews">Отзывы</a></li>
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#faq">Ответы</a></li>
+          <li class="menu__item"> <a class="menu__link js-scroll" href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="mobile menu__info">
+          <div class="social menu__social"> <span class="social__text">Спрашивайте, <br/> мы онлайн</span>
+            <div class="social__icons"> <a class="social__link" href="@"><img class="social__icon" src="img/telegram.svg" alt="@"/></a><a class="social__link" href="@"><img class="social__icon" src="img/whatsapp.svg" alt="@"/></a></div>
+          </div>
+          <div class="header-phone menu__phone"> <a class="header-phone__number" href="tel:+79165714808">+7 (916) 571-48-08</a></div>
+          <div class="header-mail menu__mail"><a class="header-mail__adress" href="mailto:arbolitstroy.pro@yandex.ru">arbolitstroy.pro@yandex.ru </a></div>
+        </div>
+      </nav>
+    </header>
+    <div class="modal" id="form"> 
+      <div class="modal__title">Заполните форму</div>
+      <p class="modal__tagtitle">и мы свяжемся с вами <b>в течении 5 минут</b> в рабочее время</p>
+      <form class="form" action="#">
+        <div class="form__field form__field--afterquiz">
+          <label class="form__label">Как вас зовут?</label>
+          <input class="form__input form__input--afterquiz" type="text" placeholder="Например, Валентин"/>
+        </div>
+        <div class="form__field form__field--afterquiz">
+          <label class="form__label">Ваш номер телефона</label>
+          <input class="form__input form__input--afterquiz js-maskPhone" type="text" placeholder="+7 (___) ___-__-__"/>
+        </div>
+        <button class="button button-blue form__button" data-fancybox="thanks" data-src="#thanks"> <span>Получить скидку</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+          </svg>
+        </button>
+        <div class="agree">
+          <label class="agree__wrap">
+            <input class="agree__input agree__input--afterquiz" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox agree__checkbox--afterquiz"></span><span class="agree__text agree__text--afterquiz">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+          </label>
+        </div>
+      </form>
+    </div>
+    <div class="modal" id="thanks"> 
+      <svg class="modal__icon" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+        <path d="M53.8125 11.5078C46.6172 12.4453 38.7422 15.3984 32.8828 19.3594C21.2578 27.2109 13.5938 39.3984 11.625 53.1328C11.2031 56.1562 11.1328 62.8359 11.4844 65.8594C13.2422 79.9922 20.9766 92.6016 32.8828 100.641C38.8828 104.695 46.6641 107.578 54.1406 108.492C56.6953 108.82 63.3047 108.82 65.8594 108.492C74.3906 107.438 82.5938 104.133 89.4844 98.9766C91.7344 97.2656 95.6719 93.4922 97.6406 91.1484C103.547 84.0703 107.438 74.9297 108.539 65.5312C108.938 62.1328 108.703 54.4688 108.07 51.1875C107.484 48.0938 106.547 44.7188 106.031 43.9453C104.719 41.9531 101.625 41.7656 99.9844 43.5938C98.7891 44.9297 98.7422 45.7266 99.7031 49.4531C100.852 53.9297 101.109 56.4375 100.945 61.4766C100.805 66.2344 100.359 68.7656 99 72.8906C96.8438 79.3828 93.2812 84.9375 88.1719 89.7891C81.2109 96.3984 72.0234 100.453 62.7422 100.969C55.0312 101.414 48.3516 100.055 41.6016 96.6797C39.9375 95.8359 37.5469 94.4297 36.3281 93.5625C33.4688 91.5469 28.4531 86.5312 26.4375 83.6719C23.3672 79.3359 20.8594 73.5234 19.6406 67.9688C19.1719 65.7891 19.125 64.8516 19.125 60C19.125 55.1484 19.1719 54.2109 19.6406 52.0312C20.8594 46.4766 23.3672 40.6641 26.4375 36.3281C28.4531 33.4688 33.4688 28.4531 36.3281 26.4375C39.1172 24.4688 43.8984 22.0547 47.1094 21C58.9688 17.0859 71.9062 18.7734 82.4062 25.5703C84.5391 26.9531 84.7969 27.0703 86.0625 27.0703C87.5625 27.0703 88.3359 26.625 89.25 25.3125C89.6016 24.7734 89.7656 24.1875 89.7656 23.3906C89.7656 21.6094 89.2266 20.7422 87.3281 19.4766C81.0938 15.2812 73.9922 12.5859 66.5859 11.6016C63.8438 11.2266 56.4141 11.1797 53.8125 11.5078Z" fill="#4971FF"></path>
+        <path d="M103.195 16.5703C102.727 16.8047 95.1562 25.6875 81.2812 42.3281C69.6562 56.2734 60.0703 67.7109 59.9999 67.7109C59.9296 67.7109 56.039 63.0938 51.3281 57.4688C46.6171 51.8438 42.4218 46.9922 41.9765 46.7109C40.4062 45.6562 37.9453 46.1719 36.8671 47.7891C36.1171 48.8906 35.9531 50.0625 36.3515 51.2109C36.7968 52.4531 57.1406 76.7109 58.1718 77.25C59.1093 77.7422 60.8906 77.7422 61.8281 77.25C62.2968 77.0156 70.8984 66.8906 85.1953 49.7812C97.664 34.875 108.047 22.3594 108.305 21.9375C108.891 20.9766 108.891 19.125 108.305 18.0469C107.437 16.4062 104.977 15.7031 103.195 16.5703Z" fill="#4971FF"></path>
+      </svg>
+      <div class="modal__title modal__title--big">Спасибо!!!</div>
+      <div class="modal__tagtitle">Ваш запрос обрабатывается, <b>мы перезвоним вам </b>в ближайшее время</div>
+      <button class="button button-blue form__button"><span>Спасибо</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="home"><img class="home__bg" src="img/home-bg.webp" alt="@"/>
+      <div class="container">
+        <div class="home__content">
+          <h1 class="home__title">все блоки тут !!</h1>
+          <div class="home__textslider">
+            <div class="swiper-pagination"></div>
+            <div class="swiper js-sliderText">
+              <div class="swiper-wrapper"> 
+                <div class="swiper-slide"> 
+                  <p> Лучший выбор блоков для Ваших строительных проектов!!</p>
+                </div>
+                <div class="swiper-slide"> 
+                  <p> Лучший выбор блоков для Ваших строительных проектов!!</p>
+                </div>
+                <div class="swiper-slide"> 
+                  <p> Лучший выбор блоков для Ваших строительных проектов!!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-info">
+            <div class="home-info__item"> <span class="home-info__icon"> </span><span class="home-info__text"><b>Оплата по факту</b> доставки</span></div>
+            <div class="home-info__item"> <span class="home-info__icon"> </span><span class="home-info__text"><b>Подбор лучших</b> производителей блоков</span></div>
+            <div class="home-info__item"> <span class="home-info__icon"> </span><span class="home-info__text"><b>Надежная</b> доставка</span></div>
+          </div>
+          <button class="button home__button"> <span>Рассчитать стоимость</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <g clip-path="url(#clip0_4_2789)">
+                <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+              </g>
+              <defs>
+                <clippath id="clip0_4_2789">
+                  <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <div class="down-buttonbox down-buttonbox__home">
+          <div class="down-button"> <img src="img/arrow-down.svg" alt="@"/></div>
+        </div>
+      </div>
+    </div>
+    <section class="quiz"> 
+      <div class="container"> 
+        <h2 class="title quiz__title"><b>Ответьте на 5 вопросов</b> и получите расчёт</h2>
+        <p class="tagtitle quiz__tagtitle">Удобный калькулятор <b>для расчета газо- и пеноблоков</b> для стройки</p>
+        <form class="quiz-form" action=""> 
+          <div class="quiz-form__inner">
+            <div class="quiz__box">
+              <div class="progress"> 
+                <div class="progress__counter">Вы отвечаете на 
+                  <output class="progress__count">1</output> <b>вопрос</b> из 5
+                </div>
+                <div class="progress__line"></div>
+              </div>
+              <div class="quiz__steps">
+                <div class="step step5"> 
+                  <div class="step__title"><b>Укажите населенный пункт куда нужна будет доставка:</b></div>
+                  <div class="step__fields"> <span class="step__entryname">Название населенного пункта</span>
+                    <input class="step__entry" type="text" placeholder="Например, Москва"/>
+                  </div>
+                      <div class="step__buttons"> 
+                        <button class="button button-blue step__button step__button--prev" ="  "> <span>Назад</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                        <button class="button button-blue step__button step__button--next" =" disabled "> <span>Далее</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                      </div>
+                </div>
+                <div class="step step4">
+                  <div class="step__title"><b>Что планируете строить?</b></div>
+                  <div class="step__fields">
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Дачный дом</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Коттедж</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Гараж</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Дом для постоянного проживания</span>
+                    </label>
+                  </div>
+                      <div class="step__buttons"> 
+                        <button class="button button-blue step__button step__button--prev" ="  "> <span>Назад</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                        <button class="button button-blue step__button step__button--next" =" disabled "> <span>Далее</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                      </div>
+                </div>
+                <div class="step step3">
+                  <div class="step__title"><b>Укажите необходимое количество кубов (м³)</b> <br/> (если нужен расчёт, можно пропустить):</div>
+                  <div class="step__fields"> <span class="step__entryname">Сколько вам нужно материала?</span>
+                    <input class="step__entry" type="text" placeholder="Например, 105"/>
+                  </div>
+                      <div class="step__buttons"> 
+                        <button class="button button-blue step__button step__button--prev" ="  "> <span>Назад</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                        <button class="button button-blue step__button step__button--next" ="  "> <span>Далее</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                      </div>
+                </div>
+                <div class="step step2"> 
+                  <div class="step__title"><b>Какой блок вам нужен?</b> (можно выбрать несколько видов)</div>
+                  <div class="step__fields">
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Стеновой</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">U-образный</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Перегородочный</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Перемычка</span>
+                    </label>
+                  </div>
+                      <div class="step__buttons"> 
+                        <button class="button button-blue step__button step__button--prev" ="  "> <span>Назад</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                        <button class="button button-blue step__button step__button--next" =" disabled "> <span>Далее</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                      </div>
+                </div>
+                <div class="step step1">
+                  <div class="step__title"><b>Из какого материала вам нужен блок?</b> </div>
+                  <div class="step__fields">
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step1"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Арболит</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step1"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Газоблок</span>
+                    </label>
+                    <label class="step-lable">
+                      <input class="step-lable__input" type="radio" name="step1"/>
+                      <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
+                        <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
+                      </svg><span class="step-lable__name">Керамический блок</span>
+                    </label>
+                  </div>
+                      <div class="step__buttons"> 
+                        <button class="button button-blue step__button step__button--prev" =" disabled "> <span>Назад</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                        <button class="button button-blue step__button step__button--next" =" disabled "> <span>Далее</span>
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                          </svg>
+                        </button>
+                      </div>
+                </div>
+              </div>
+            </div>
+            <div class="desktop">
+              <div class="quiz-info"><img class="quiz-info__bg" src="img/mujik-1.webp" alt="@"/>
+                <div class="quiz-info__content"> 
+                  <div class="quiz-info__title">В конце теста вы получите:</div>
+                  <p class="quiz-info__tagtitle">Расчет стоимости блоков <br/> в трех вариантах</p>
+                  <p class="quiz-info__tagtitle">Гарантированный подарок</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="afterquiz">
+            <div class="afterquiz__form">
+              <div class="title afterquiz__title">Спасибо за ответы!</div>
+              <p class="tagtitle afterquiz__tagtitle">Заполните форму, чтобы узнать стоимость <br/> вашего проекта и <b>скидку 10% на материал</b></p>
+              <div class="form">
+                <div class="form__field form__field--afterquiz">
+                  <label class="form__label">Как вас зовут?</label>
+                  <input class="form__input form__input--afterquiz" type="text" placeholder="Например, Валентин"/>
+                </div>
+                <div class="form__field form__field--afterquiz">
+                  <label class="form__label">Ваш номер телефона</label>
+                  <input class="form__input form__input--afterquiz js-maskPhone" type="text" placeholder="+7 (___) ___-__-__"/>
+                </div>
+                <button class="button button-blue form__button"> <span>Получить скидку</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M8.91726 6.12131C8.85539 6.32239 8.89793 6.50027 9.05067 6.66849C9.14928 6.77869 9.19762 6.81543 9.28849 6.84443C9.35423 6.86377 10 6.87924 10.7773 6.87924L12.152 6.8773L8.89019 10.1584C5.25135 13.8205 5.56265 13.4821 5.58198 13.7567C5.59165 13.9094 5.62839 13.9848 5.77146 14.1279C5.91841 14.2749 5.99188 14.3097 6.1601 14.3193C6.43659 14.3329 6.18136 14.5687 9.7912 10.9589L13.0221 7.72804L13.0221 9.12789C13.0259 9.89742 13.0395 10.5722 13.0588 10.6263C13.111 10.783 13.3276 10.9647 13.5035 10.9937C13.7085 11.0324 13.8689 10.9802 14.0198 10.8294C14.0855 10.7598 14.1551 10.6708 14.1706 10.6283C14.186 10.5857 14.2015 9.55326 14.2034 8.33322C14.2054 6.20445 14.2034 6.10971 14.1338 5.99756C14.0565 5.86995 13.8902 5.73074 13.7897 5.70367C13.6756 5.67467 9.37163 5.70174 9.27882 5.73267C9.13768 5.78101 8.96753 5.96276 8.91726 6.12131Z"></path>
+                  </svg>
+                </button>
+                <div class="agree">
+                  <label class="agree__wrap">
+                    <input class="agree__input agree__input--afterquiz" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox agree__checkbox--afterquiz"></span><span class="agree__text agree__text--afterquiz">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="afterquiz__timerbox">
+              <div class="desktop"> <img src="img/afterquiz.webp" alt="@"/></div>
+              <div class="timer">
+                <p class="timer__text"><b>Скидка 10%</b> на ваш проект сгорит через:</p>
+                <div class="timer__count"></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="catalog" id="catalog">
+      <div class="container"> 
+        <h3 class="title catalog__title"><b>Каталог материалов</b> под любой бюджет</h3>
+        <p class="tagtitle catalog__tagtitle">Соблюдение всех <b>технических условий и ГОСТ</b></p>
+        <div class="tabs">
+          <div class="tabs__headerbox">
+            <div class="runner"></div>
+            <div class="tabs__header">
+              <button class="tabs__button js-tabBtn"><span class="tabs__name">Газоблок</span></button>
+              <button class="tabs__button js-tabBtn"><span class="tabs__name">Арболит</span></button>
+              <button class="tabs__button js-tabBtn"><span class="tabs__name">Керамический блок</span></button>
+            </div>
+          </div>
+          <div class="tabs__content">
+            <div class="product__slider">
+              <div class="swiper overflow-visible js-sliderProducts"> 
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-0.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 200*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">6 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-1.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 250*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">6 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-2.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 300*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">6 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-3.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 400*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">6 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-0.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 400*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">6 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content">
+            <div class="product__slider">
+              <div class="swiper overflow-visible js-sliderProducts"> 
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-0.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 200*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">7 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-1.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 250*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">7 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-2.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 300*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">7 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-3.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 400*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">7 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-0.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 400*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">7 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content">
+            <div class="product__slider">
+              <div class="swiper overflow-visible js-sliderProducts"> 
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-0.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 200*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">8 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-1.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 250*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">8 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-2.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 300*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">8 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-3.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 400*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">8 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product"><img class="product__img" src="img/product-0.webp" alt="@"/>
+                      <h6 class="product__name">Газоблок 400*300*600мм</h6>
+                      <p class="product__descr">Стеновой блок</p>
+                      <div class="product__price">8 900<span class="product__price--val"> / m3</span></div>
+                      <div class="product__buttonbox"> 
+                        <button class="button product__button">Заказать
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g clip-path="url(#clip0_4_2789)">
+                              <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                            </g>
+                            <defs>
+                              <clippath id="clip0_4_2789">
+                                <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                              </clippath>
+                            </defs>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="help">   
+      <div class="container"> 
+        <div class="help__box">
+          <div class="help__titlebox"> 
+            <h4 class="title help__title"><b>Не нашли</b> <br/> нужный материал?</h4>
+            <p class="tagtitle help__tagtitle">Мы готовы помочь вам: <b>отвечаем</b> <br/> <b>на вопросы, подскажем и посчитаем</b> </p>
+          </div><img class="help__img" src="img/smartphone.webp" alt="@"/>
+          <div class="help__contacts">
+            <div class="help-phone"><span class="help-phone__text">Позвоните или напишите</span><a class="help-phone__num" href="tel:+79165714808">+7 (916) 571-48-08</a></div>
+            <div class="social">
+              <div class="social__icons"> <a class="social__link" href="@"><img class="social__icon" src="img/telegram.svg" alt="@"/></a><a class="social__link" href="@"><img class="social__icon" src="img/whatsapp.svg" alt="@"/></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages" id="advantages"> <img class="advantages__bg" src="img/advantages-bg.webp" alt="@"/>
+      <div class="container"> 
+        <h4 class="title advantages__title"><b>6 причин выбирать нас</b> <br/> для поставки стройматериалов</h4>
+        <p class="tagtitle advantages__tagtitle">самые низкие цены и доставка точно в срок</p>
+        <div class="advantages__box">
+          <div class="advantage"> <img class="advantage__icon" src="img/advantage-0.svg" alt="@"/>
+            <h6 class="advantage__title">Качество без компромиссов</h6>
+            <p class="advantage__text"> работаем с лучшими производителями и следим за качеством на каждом этапе производства</p>
+          </div>
+          <div class="advantage"> <img class="advantage__icon" src="img/advantage-1.svg" alt="@"/>
+            <h6 class="advantage__title">Разнообразие ассортимента</h6>
+            <p class="advantage__text"> наш каталог включает в себя широкий выбор разных размеров и характеристик, для потребностей любого проекта</p>
+          </div>
+          <div class="advantage"> <img class="advantage__icon" src="img/advantage-2.svg" alt="@"/>
+            <h6 class="advantage__title">Доставка в срок</h6>
+            <p class="advantage__text"> ценим ваше время и гарантируем своевременную доставку</p>
+          </div>
+          <div class="advantage"> <img class="advantage__icon" src="img/advantage-3.svg" alt="@"/>
+            <h6 class="advantage__title">Профессиональный консультации</h6>
+            <p class="advantage__text"> Наши специалисты всегда готовы помочь вам с выбором правильных материалов и ответить на ваши вопросы</p>
+          </div>
+          <div class="advantage"> <img class="advantage__icon" src="img/advantage-4.svg" alt="@"/>
+            <h6 class="advantage__title">Клиентоориентированный подход</h6>
+            <p class="advantage__text"> стремимся удовлетворить все потребности наших клиентов и предоставить качественное обслуживание</p>
+          </div>
+          <div class="advantage"> <img class="advantage__icon" src="img/advantage-5.svg" alt="@"/>
+            <h6 class="advantage__title">Индивидуальный подход</h6>
+            <p class="advantage__text"> понимаем, что каждый проект уникален, и предоставляем индивидуальные решения, учитывая специфику</p>
+          </div>
+        </div>
+      </div>
+      <div class="down-buttonbox down-buttonbox__advantages">
+        <div class="down-button"> <img src="img/arrow-down.svg" alt="@"/></div>
+      </div>
+    </section>
+    <section class="instruction"> 
+      <div class="container"> 
+        <h4 class="title instruction__title"><b>Как сделать заказ?</b></h4>
+        <div class="instruction__box"> 
+          <div class="instruction-step"> 
+            <div class="instruction-step__iconbox"><img class="instruction-step__icon" src="img/step-0.svg" alt="@"/></div>
+            <div class="instruction-step__info"> 
+              <div class="instruction-step__title">Оставить заявку</div>
+              <p class="instruction-step__text">любым удобным способом</p>
+            </div>
+            <div class="instruction-step__contacts"><a class="instruction-step__phone" href="+79165714808">+7 (916) 571-48-08</a>
+              <div class="social">
+                <div class="social__icons"> <a class="social__link" href="@"><img class="social__icon" src="img/telegram.svg" alt="@"/></a><a class="social__link" href="@"><img class="social__icon" src="img/whatsapp.svg" alt="@"/></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="instruction-step"> 
+            <div class="instruction-step__iconbox"><img class="instruction-step__icon" src="img/step-1.svg" alt="@"/></div>
+            <div class="instruction-step__info"> 
+              <div class="instruction-step__title">Заключение договора</div>
+              <p class="instruction-step__text">с точным объемом <br> и датой доставки</p>
+            </div>
+          </div>
+          <div class="instruction-step"> 
+            <div class="instruction-step__iconbox"><img class="instruction-step__icon" src="img/step-2.svg" alt="@"/></div>
+            <div class="instruction-step__info"> 
+              <div class="instruction-step__title">Доставка</div>
+              <p class="instruction-step__text">строительных материалов</p>
+            </div>
+          </div>
+          <div class="instruction-step"> 
+            <div class="instruction-step__iconbox"><img class="instruction-step__icon" src="img/step-3.svg" alt="@"/></div>
+            <div class="instruction-step__info"> 
+              <div class="instruction-step__title">Оплата на месте</div>
+              <p class="instruction-step__text">по факту доставки</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consultation consultation-spec">
+      <div class="container"> 
+        <div class="consultation__box"> <img class="consultation__bg" src="img/form-bg.webp" alt="@"/>
+          <div class="consultation__info">
+            <h4 class="title consultation__title"><b>Получите консультацию</b> <br/> специалиста прямо сейчас</h4>
+            <ul class="consultation__list"> 
+              <li class="consultation__item"><b>Уточним</b> размеры и количество блоков</li>
+              <li class="consultation__item"><b>Консультацию специалиста</b> о том, <br> на чем можно экономить, а на чем нет</li>
+              <li class="consultation__item"><b>Рассчитаем смету с точностью 100%</b> <br> и сформируем коммерческое предложение</li>
+              <li class="consultation__item"><b>Согласование времени</b> <br> доставки материалов на строй площадку</li>
+            </ul>
+          </div>
+          <div class="desktop"><img class="consultation__img" src="img/mujik-2.webp" alt="@"/></div>
+          <div class="consultation__form">
+            <form class="form" action="#">
+              <div class="form__field">
+                <label class="form__label">Как вас зовут?</label>
+                <input class="form__input" type="text" placeholder="Например, Валентин"/>
+              </div>
+              <div class="form__field">
+                <label class="form__label">Ваш номер телефона</label>
+                <input class="form__input js-maskPhone" type="text" placeholder="+7 (___) ___-__-__"/>
+              </div>
+              <button class="button form__button"> <span>Получить консультацию</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <g clip-path="url(#clip0_4_2789)">
+                    <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_4_2789">
+                      <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="agree">
+                <label class="agree__wrap">
+                  <input class="agree__input" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox"></span><span class="agree__text">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="char"> 
+      <div class="container"> 
+        <h4 class="title char__title"><b>Сравнение характеристик</b> материалов</h4>
+        <p class="tagtitle char__tagtitle">Для вашего удобства мы сделали <b>сравнительную</b> <br/> <b>таблицу</b> популярных строй материалов</p>
+        <div class="table"> 
+          <div class="desktop">
+            <div class="table__col table__col--char"> 
+              <div class="table__item table__item--chartitle">Характеристики</div>
+              <div class="table__item table__item--charname">Теплоизоляция (W/mK)</div>
+              <div class="table__item table__item--charname">Прочность (МПа)</div>
+              <div class="table__item table__item--charname">Плотность (кг/м³)</div>
+              <div class="table__item table__item--charname">Звукоизоляция (дБ)</div>
+              <div class="table__item table__item--charname">Экологическая устойчивость</div>
+              <div class="table__item table__item--charname">Устойчивость к огню</div>
+              <div class="table__item table__item--charname">Цена (руб/м³)</div>
+            </div>
+          </div>
+          <div class="table__col table__col--gaz">
+            <div class="table__item table__item--product">Газоблок</div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Теплоизоляция (W/mK)</b></div><span>0.15 - 0.24</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Прочность (МПа)</b></div><span>2 - 5</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Плотность (кг/м³)</b></div><span>400 - 700</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Звукоизоляция (дБ)</b></div><span>35 - 45</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Экологическая устойчивость</b></div><span>Высокая</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Устойчивость к огню</b></div><span>Низкая</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Цена (руб/м³)</b></div><span>6000 - 9000</span>
+            </div>
+          </div>
+          <div class="table__col table__col--pen">
+            <div class="table__item table__item--product">Пеноблок</div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Теплоизоляция (W/mK)</b></div><span>0.07 - 0.09</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Прочность (МПа)</b></div><span>2.5 - 10</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Плотность (кг/м³)</b></div><span>300 - 600</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Звукоизоляция (дБ)</b></div><span>40 - 50</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Экологическая устойчивость</b></div><span>Очень высокая</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Устойчивость к огню</b></div><span>Высокая</span>
+            </div>
+            <div class="table__item table__item--val">
+              <div class="mobile"><b>Цена (руб/м³)</b></div><span>7000 - 11000</span>
+            </div>
+          </div>
+          <div class="table__col table__col--arbolite">
+            <div class="table__item table__item--product">Арболит</div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Теплоизоляция (W/mK)</b></div><span>0.15</span>
+            </div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Прочность (МПа)</b></div><span>3 - 5</span>
+            </div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Плотность (кг/м³)</b></div><span>400 - 800</span>
+            </div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Звукоизоляция (дБ)</b></div><span>40 - 45</span>
+            </div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Экологическая устойчивость</b></div><span>Высокая</span>
+            </div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Устойчивость к огню</b></div><span>Низкая</span>
+            </div>
+            <div class="table__item table__item--val table__item--arbolite"> 
+              <div class="mobile"><b>Цена (руб/м³)</b></div><span>8000 - 12000</span>
+            </div>
+          </div>
+        </div>
+        <p class="char__info">Арболит представляет собой <b>экологически безопасный, теплоизолирующий</b> <br/> <b>и звукоизолирующий материал</b>, который легче газоблока и пеноблока, устойчив <br/> к влаге и гниению, и подходит для разнообразных видов строительных работ.</p>
+      </div>
+      <div class="desktop"><img class="char__img" src="img/house.webp" alt="@"/></div>
+    </section>
+    <section class="reviews" id="reviews"> <img class="reviews__bg" src="img/reviews-bg.webp" alt="@"/>
+      <div class="container"> 
+        <h4 class="title reviews__title">Вот, что <b>говорят о нас клиенты</b></h4>
+        <div class="reviews__slider"> 
+          <div class="swiper js-sliderReviews"> 
+            <div class="swiper-wrapper"> 
+              <div class="swiper-slide"> 
+                <div class="review"> 
+                  <div class="review__name">Валиков П., дом 240 м2</div>
+                  <p class="review__text">Пеноблоки - отличный выбор для строительства. Мы использовали их для постройки нашего дома и были приятно удивлены их легкостью установки и теплоизоляцией. Наш дом остается теплым зимой и прохладным летом благодаря этим блокам. Очень довольны результатом!</p>
+                  <div class="review__info"> <span class="review__material">Материал: Пеноблок</span>
+                    <date class="review__date">Август 2023</date>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="review"> 
+                  <div class="review__name">Валиков П., дом 240 м2</div>
+                  <p class="review__text">Пеноблоки - отличный выбор для строительства. Мы использовали их для постройки нашего дома и были приятно удивлены их легкостью установки и теплоизоляцией. Наш дом остается теплым зимой и прохладным летом благодаря этим блокам. Очень довольны результатом!</p>
+                  <div class="review__info"> <span class="review__material">Материал: Пеноблок</span>
+                    <date class="review__date">Август 2023</date>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="review"> 
+                  <div class="review__name">Валиков П., дом 240 м2</div>
+                  <p class="review__text">Пеноблоки - отличный выбор для строительства. Мы использовали их для постройки нашего дома и были приятно удивлены их легкостью установки и теплоизоляцией. Наш дом остается теплым зимой и прохладным летом благодаря этим блокам. Очень довольны результатом!</p>
+                  <div class="review__info"> <span class="review__material">Материал: Пеноблок</span>
+                    <date class="review__date">Август 2023</date>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="review"> 
+                  <div class="review__name">Валиков П., дом 240 м2</div>
+                  <p class="review__text">Пеноблоки - отличный выбор для строительства. Мы использовали их для постройки нашего дома и были приятно удивлены их легкостью установки и теплоизоляцией. Наш дом остается теплым зимой и прохладным летом благодаря этим блокам. Очень довольны результатом!</p>
+                  <div class="review__info"> <span class="review__material">Материал: Пеноблок</span>
+                    <date class="review__date">Август 2023</date>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div class="down-buttonbox down-buttonbox__reviews">
+        <div class="down-button"> <img src="img/arrow-down.svg" alt="@"/></div>
+      </div>
+    </section>
+    <section class="faq" id="faq"> 
+      <div class="container"> 
+        <h4 class="title faq__title"><b>Отвечаем</b> на часто задаваемые вопросы</h4>
+        <div class="accordeon"> 
+          <div class="accordeon__box">
+            <div class="accordeon__item">
+              <div class="accordeon__header"><img class="accordeon__icon1" src="img/arrow-right.svg" alt="@"/><span>Можем ли мы доставить блок без предоплаты?</span><img class="accordeon__icon2" src="img/arrow-accordeon.png" alt="@"/></div>
+              <div class="accordeon__content"> 
+                <div class="accordeon__inner">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал журчит за проектах, над грустный о пустился дороге не они по всей, свой запятых. Заманивший собрал то снова текстов продолжил.Рот там безорфографичный заглавных всеми! Назад всеми имени деревни рыбного запятых если родного пор жаренные парадигматическая предложения семь, семантика составитель встретил океана, которой точках ты вскоре домах, залетают лучше скатился.Наш не, алфавит то меня вопрос большой власти речью грамматики о коварный что пор на берегу свое lorem снова дороге над составитель, текстов раз жаренные. Реторический даль коварных безорфографичный щеке сбить!Однажды пор домах журчит текстов приставка даже он переписали предупреждал, несколько его единственное взобравшись наш путь дорогу собрал составитель лучше предложения но, первую свою вершину там это! Маленький, свой текстами!Взобравшись дал, осталось по всей власти обеспечивает путь которой свой последний своих большой переулка ты это там города рукописи текстов приставка даже сих рыбными свою продолжил! Скатился грамматики все злых на берегу!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"><img class="accordeon__icon1" src="img/arrow-right.svg" alt="@"/><span>Какие сроки поставки с момента заказа?</span><img class="accordeon__icon2" src="img/arrow-accordeon.png" alt="@"/></div>
+              <div class="accordeon__content"> 
+                <div class="accordeon__inner">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал журчит за проектах, над грустный о пустился дороге не они по всей, свой запятых. Заманивший собрал то снова текстов продолжил.Рот там безорфографичный заглавных всеми! Назад всеми имени деревни рыбного запятых если родного пор жаренные парадигматическая предложения семь, семантика составитель встретил океана, которой точках ты вскоре домах, залетают лучше скатился.Наш не, алфавит то меня вопрос большой власти речью грамматики о коварный что пор на берегу свое lorem снова дороге над составитель, текстов раз жаренные. Реторический даль коварных безорфографичный щеке сбить!Однажды пор домах журчит текстов приставка даже он переписали предупреждал, несколько его единственное взобравшись наш путь дорогу собрал составитель лучше предложения но, первую свою вершину там это! Маленький, свой текстами!Взобравшись дал, осталось по всей власти обеспечивает путь которой свой последний своих большой переулка ты это там города рукописи текстов приставка даже сих рыбными свою продолжил! Скатился грамматики все злых на берегу!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"><img class="accordeon__icon1" src="img/arrow-right.svg" alt="@"/><span>Как узнать о наличии блока?</span><img class="accordeon__icon2" src="img/arrow-accordeon.png" alt="@"/></div>
+              <div class="accordeon__content"> 
+                <div class="accordeon__inner">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал журчит за проектах, над грустный о пустился дороге не они по всей, свой запятых. Заманивший собрал то снова текстов продолжил.Рот там безорфографичный заглавных всеми! Назад всеми имени деревни рыбного запятых если родного пор жаренные парадигматическая предложения семь, семантика составитель встретил океана, которой точках ты вскоре домах, залетают лучше скатился.Наш не, алфавит то меня вопрос большой власти речью грамматики о коварный что пор на берегу свое lorem снова дороге над составитель, текстов раз жаренные. Реторический даль коварных безорфографичный щеке сбить!Однажды пор домах журчит текстов приставка даже он переписали предупреждал, несколько его единственное взобравшись наш путь дорогу собрал составитель лучше предложения но, первую свою вершину там это! Маленький, свой текстами!Взобравшись дал, осталось по всей власти обеспечивает путь которой свой последний своих большой переулка ты это там города рукописи текстов приставка даже сих рыбными свою продолжил! Скатился грамматики все злых на берегу!</div>
+              </div>
+            </div>
+          </div>
+          <div class="accordeon__box">
+            <div class="accordeon__item">
+              <div class="accordeon__header"><img class="accordeon__icon1" src="img/arrow-right.svg" alt="@"/><span>В какое время приезжают машины с блоком?</span><img class="accordeon__icon2" src="img/arrow-accordeon.png" alt="@"/></div>
+              <div class="accordeon__content"> 
+                <div class="accordeon__inner">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал журчит за проектах, над грустный о пустился дороге не они по всей, свой запятых. Заманивший собрал то снова текстов продолжил.Рот там безорфографичный заглавных всеми! Назад всеми имени деревни рыбного запятых если родного пор жаренные парадигматическая предложения семь, семантика составитель встретил океана, которой точках ты вскоре домах, залетают лучше скатился.Наш не, алфавит то меня вопрос большой власти речью грамматики о коварный что пор на берегу свое lorem снова дороге над составитель, текстов раз жаренные. Реторический даль коварных безорфографичный щеке сбить!Однажды пор домах журчит текстов приставка даже он переписали предупреждал, несколько его единственное взобравшись наш путь дорогу собрал составитель лучше предложения но, первую свою вершину там это! Маленький, свой текстами!Взобравшись дал, осталось по всей власти обеспечивает путь которой свой последний своих большой переулка ты это там города рукописи текстов приставка даже сих рыбными свою продолжил! Скатился грамматики все злых на берегу!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"><img class="accordeon__icon1" src="img/arrow-right.svg" alt="@"/><span>У вас есть сертификаты и гарантии?</span><img class="accordeon__icon2" src="img/arrow-accordeon.png" alt="@"/></div>
+              <div class="accordeon__content"> 
+                <div class="accordeon__inner">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал журчит за проектах, над грустный о пустился дороге не они по всей, свой запятых. Заманивший собрал то снова текстов продолжил.Рот там безорфографичный заглавных всеми! Назад всеми имени деревни рыбного запятых если родного пор жаренные парадигматическая предложения семь, семантика составитель встретил океана, которой точках ты вскоре домах, залетают лучше скатился.Наш не, алфавит то меня вопрос большой власти речью грамматики о коварный что пор на берегу свое lorem снова дороге над составитель, текстов раз жаренные. Реторический даль коварных безорфографичный щеке сбить!Однажды пор домах журчит текстов приставка даже он переписали предупреждал, несколько его единственное взобравшись наш путь дорогу собрал составитель лучше предложения но, первую свою вершину там это! Маленький, свой текстами!Взобравшись дал, осталось по всей власти обеспечивает путь которой свой последний своих большой переулка ты это там города рукописи текстов приставка даже сих рыбными свою продолжил! Скатился грамматики все злых на берегу!</div>
+              </div>
+            </div>
+            <div class="accordeon__item">
+              <div class="accordeon__header"><img class="accordeon__icon1" src="img/arrow-right.svg" alt="@"/><span>Какие строительные проекты можно реализовать?</span><img class="accordeon__icon2" src="img/arrow-accordeon.png" alt="@"/></div>
+              <div class="accordeon__content"> 
+                <div class="accordeon__inner">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Предупреждал журчит за проектах, над грустный о пустился дороге не они по всей, свой запятых. Заманивший собрал то снова текстов продолжил.Рот там безорфографичный заглавных всеми! Назад всеми имени деревни рыбного запятых если родного пор жаренные парадигматическая предложения семь, семантика составитель встретил океана, которой точках ты вскоре домах, залетают лучше скатился.Наш не, алфавит то меня вопрос большой власти речью грамматики о коварный что пор на берегу свое lorem снова дороге над составитель, текстов раз жаренные. Реторический даль коварных безорфографичный щеке сбить!Однажды пор домах журчит текстов приставка даже он переписали предупреждал, несколько его единственное взобравшись наш путь дорогу собрал составитель лучше предложения но, первую свою вершину там это! Маленький, свой текстами!Взобравшись дал, осталось по всей власти обеспечивает путь которой свой последний своих большой переулка ты это там города рукописи текстов приставка даже сих рыбными свою продолжил! Скатился грамматики все злых на берегу!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="consultation consultation-calc">
+      <div class="container"> 
+        <div class="consultation__box"> <img class="consultation__bg" src="img/form2-bg.webp" alt="@"/>
+          <div class="consultation__info">
+            <h4 class="title consultation__title"><b>Расчет точной стоимости</b> <br/> материалов уже сегодня</h4>
+            <ul class="consultation__list"> 
+              <li class="consultation__item">Всегда в наличии. <b>Любой объем блоков <br> в день обращения</b></li>
+              <li class="consultation__item"><b>Бесплатная</b> погрузка и разгрузка материала</li>
+              <li class="consultation__item"><b>Бесплатная консультация</b> <br> для Вас и для Ваших строителей</li>
+              <li class="consultation__item"><b>Поможем подобрать оптимальное предложение</b> <br> и проконсультируем по всем вопросам</li>
+            </ul>
+          </div>
+          <div class="desktop"><img class="consultation__img" src="img/mujik-3.webp" alt="@"/></div>
+          <div class="consultation__form">
+            <form class="form" action="#">
+              <div class="form__field">
+                <label class="form__label">Как вас зовут?</label>
+                <input class="form__input" type="text" placeholder="Например, Валентин"/>
+              </div>
+              <div class="form__field">
+                <label class="form__label">Ваш номер телефона</label>
+                <input class="form__input js-maskPhone" type="text" placeholder="+7 (___) ___-__-__"/>
+              </div>
+              <button class="button form__button"> <span>Получить консультацию</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <g clip-path="url(#clip0_4_2789)">
+                    <path d="M8.91726 6.12155C8.85539 6.32263 8.89793 6.50052 9.05067 6.66873C9.14928 6.77894 9.19762 6.81568 9.28849 6.84468C9.35423 6.86401 10 6.87948 10.7773 6.87948L12.152 6.87755L8.89019 10.1587C5.25135 13.8207 5.56265 13.4824 5.58198 13.7569C5.59165 13.9097 5.62839 13.9851 5.77146 14.1282C5.91841 14.2751 5.99188 14.3099 6.1601 14.3196C6.43659 14.3331 6.18137 14.569 9.7912 10.9592L13.0221 7.72829L13.0221 9.12814C13.0259 9.89767 13.0395 10.5725 13.0588 10.6266C13.111 10.7832 13.3276 10.965 13.5035 10.994C13.7085 11.0326 13.8689 10.9804 14.0198 10.8296C14.0855 10.76 14.1551 10.6711 14.1706 10.6285C14.186 10.586 14.2015 9.5535 14.2034 8.33347C14.2054 6.20469 14.2034 6.10995 14.1338 5.99781C14.0565 5.8702 13.8902 5.73098 13.7897 5.70392C13.6756 5.67491 9.37163 5.70198 9.27882 5.73292C9.13768 5.78126 8.96753 5.96301 8.91726 6.12155Z"></path>
+                  </g>
+                  <defs>
+                    <clippath id="clip0_4_2789">
+                      <rect width="14" height="14" fill="white" transform="translate(0 10) rotate(-45)"></rect>
+                    </clippath>
+                  </defs>
+                </svg>
+              </button>
+              <div class="agree">
+                <label class="agree__wrap">
+                  <input class="agree__input" type="checkbox" checked="checked" autocomplete="off"/><span class="agree__checkbox"></span><span class="agree__text">Нажимая на кнопку, вы соглашаетесь с <br/> <a href="">политикой конфиденциальности </a></span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts"> 
+      <div class="container"> 
+        <div class="contacts__box">
+          <div class="contacts__info">
+            <h4 class="title contacts__title">Наши <br/> <b>контакты</b></h4>
+            <div class="contacts__item"> <span class="contacts__label">Телефон</span><a class="contacts__phone" href="tel:+79165714808">+7 (916) 571-48-08</a></div>
+            <div class="contacts__item"> <span class="contacts__label">Почта</span><a class="contacts__mail" href="mailto:arbolitstroy.pro@yandex.ru">arbolitstroy.pro@yandex.ru</a></div>
+            <div class="contacts__item"> <span class="contacts__label">Адрес</span><span class="contacts__adress">г. Подольск, ул. Комсомольская, 1</span></div>
+            <div class="contacts__item">
+              <div class="social"><span class="contacts__label">Соц. сети</span>
+                <div class="social__icons"> <a class="social__link" href="@"><img class="social__icon" src="img/telegram.svg" alt="@"/></a><a class="social__link" href="@"><img class="social__icon" src="img/whatsapp.svg" alt="@"/></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__map" id="map"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container"> 
+        <div class="footer__box"> 
+          <div class="footer__logo"> 
+            <figure class="logo"><img class="logo__img" src="img/logo.svg" alt="@"/>
+              <div class="desktop">
+                <figcaption class="logo__text">Поставщик газоблоков, <br/> пеноблоков и арболита</figcaption>
+              </div>
+            </figure>
+          </div>
+          <div class="footer__links"> <a href="#">Пользавательское соглашение</a><a href="#">Политика конфиденциальности</a></div><a class="footer__dev" href="">
+             Создание сайта<img src="img/scrum-logo.png" alt="#"/></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

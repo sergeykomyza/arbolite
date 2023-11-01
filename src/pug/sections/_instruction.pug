@@ -1,0 +1,26 @@
+-
+    const instruction = [
+        {icon: 'step-0.svg', title: 'Оставить заявку',     text: 'любым удобным способом'},
+        {icon: 'step-1.svg', title: 'Заключение договора', text: 'с точным объемом <br> и датой доставки'},
+        {icon: 'step-2.svg', title: 'Доставка',            text: 'строительных материалов'},
+        {icon: 'step-3.svg', title: 'Оплата на месте',     text: 'по факту доставки'}
+    ]
+
+section.instruction 
+    .container 
+        h4.title.instruction__title
+            b Как сделать заказ?
+        .instruction__box 
+            each item, i in instruction 
+                .instruction-step 
+                    .instruction-step__iconbox
+                        img.instruction-step__icon(src="img/"+item.icon, alt="@")
+                    .instruction-step__info 
+                        .instruction-step__title= item.title
+                        p.instruction-step__text !{item.text}
+                    if(i === 0)
+                        .instruction-step__contacts
+                            a.instruction-step__phone(href="+79165714808") +7 (916) 571-48-08
+                            .social
+                                include ./_socials.pug
+            

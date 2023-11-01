@@ -1,0 +1,21 @@
+section.reviews#reviews 
+    img.reviews__bg(src="img/reviews-bg.webp", alt="@")
+    .container 
+        h4.title.reviews__title Вот, что #[b говорят о нас клиенты]
+
+        .reviews__slider 
+            .swiper.js-sliderReviews 
+                .swiper-wrapper 
+                    each item in [1, 2, 3, 4]
+                        .swiper-slide 
+                            .review 
+                                .review__name Валиков П., дом 240 м2
+                                p.review__text Пеноблоки - отличный выбор для строительства. Мы использовали их для постройки нашего дома и были приятно удивлены их легкостью установки и теплоизоляцией. Наш дом остается теплым зимой и прохладным летом благодаря этим блокам. Очень довольны результатом!
+                                .review__info 
+                                    span.review__material Материал: Пеноблок
+                                    date.review__date Август 2023
+                .swiper-pagination
+
+
+    .down-buttonbox.down-buttonbox__reviews
+        include ./../layouts/_iconArrowSectionDown.pug

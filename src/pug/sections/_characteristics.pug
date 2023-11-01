@@ -1,0 +1,67 @@
+-
+    const gaz = [
+        {name: 'Теплоизоляция (W/mK)',       val: '0.15 - 0.24'},
+        {name: 'Прочность (МПа)',            val: '2 - 5'},
+        {name: 'Плотность (кг/м³)',          val: '400 - 700'},
+        {name: 'Звукоизоляция (дБ)',         val: '35 - 45'},
+        {name: 'Экологическая устойчивость', val: 'Высокая'},
+        {name: 'Устойчивость к огню',        val: 'Низкая'},
+        {name: 'Цена (руб/м³)',              val: '6000 - 9000'}
+    ]
+    const pen = [
+        {name: 'Теплоизоляция (W/mK)',       val: '0.07 - 0.09'},
+        {name: 'Прочность (МПа)',            val: '2.5 - 10'},
+        {name: 'Плотность (кг/м³)',          val: '300 - 600'},
+        {name: 'Звукоизоляция (дБ)',         val: '40 - 50'},
+        {name: 'Экологическая устойчивость', val: 'Очень высокая'},
+        {name: 'Устойчивость к огню',        val: 'Высокая'},
+        {name: 'Цена (руб/м³)',              val: '7000 - 11000'}
+    ]
+    const arbolite = [
+        {name: 'Теплоизоляция (W/mK)',       val: '0.15'},
+        {name: 'Прочность (МПа)',            val: '3 - 5'},
+        {name: 'Плотность (кг/м³)',          val: '400 - 800'},
+        {name: 'Звукоизоляция (дБ)',         val: '40 - 45'},
+        {name: 'Экологическая устойчивость', val: 'Высокая'},
+        {name: 'Устойчивость к огню',        val: 'Низкая'},
+        {name: 'Цена (руб/м³)',              val: '8000 - 12000'}
+    ]
+
+
+section.char 
+    .container 
+        h4.title.char__title #[b Сравнение характеристик] материалов
+        p.tagtitle.char__tagtitle Для вашего удобства мы сделали #[b сравнительную] #[br] #[b таблицу] популярных строй материалов
+
+        .table 
+            .desktop
+                .table__col.table__col--char 
+                    .table__item.table__item--chartitle Характеристики
+                    each item in ['Теплоизоляция (W/mK)','Прочность (МПа)','Плотность (кг/м³)','Звукоизоляция (дБ)','Экологическая устойчивость','Устойчивость к огню','Цена (руб/м³)']
+                        .table__item.table__item--charname= item
+            .table__col.table__col--gaz
+                .table__item.table__item--product Газоблок
+                each item in gaz
+                    .table__item.table__item--val
+                        .mobile
+                            b= item.name
+                        span= item.val
+            .table__col.table__col--pen
+                .table__item.table__item--product Пеноблок
+                each item in pen
+                    .table__item.table__item--val
+                        .mobile
+                            b= item.name
+                        span= item.val
+            .table__col.table__col--arbolite
+                .table__item.table__item--product Арболит
+                each item in arbolite
+                    .table__item.table__item--val.table__item--arbolite 
+                        .mobile
+                            b= item.name
+                        span= item.val
+
+        p.char__info Арболит представляет собой #[b экологически безопасный, теплоизолирующий] #[br] #[b и звукоизолирующий материал], который легче газоблока и пеноблока, устойчив #[br] к влаге и гниению, и подходит для разнообразных видов строительных работ.
+
+    .desktop
+        img.char__img(src="img/house.webp", alt="@")

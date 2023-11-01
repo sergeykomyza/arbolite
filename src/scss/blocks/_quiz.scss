@@ -1,0 +1,316 @@
+.quiz{
+
+    margin-bottom: 100px;
+
+    &__title{
+        margin-bottom: 4px;
+    }
+
+    &__tagtitle{
+        margin-bottom: 32px; 
+    }
+
+    &__box{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 35px;
+        padding-bottom: 30px;
+        border-radius: 14px;
+        background: var(--color-6);
+        @media(max-width: 992px){
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+    
+    &__steps{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-info{
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        padding-top: 40px;
+        border-radius: 14px;
+        &__bg{
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &__content{
+            text-align: center;
+            transform: translateX(15px);
+        }
+        &__title{
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        &__tagtitle{
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+    }
+
+    &-form{
+        position: relative;
+        overflow: hidden;
+        &__inner{
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            min-height: 554px;
+            @media(max-width: 992px){
+                grid-template-columns: 1fr ;
+            }
+        }
+    }
+    
+}
+
+.step{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: var(--color-6);
+    transition: all .5s;
+
+    &.is-deactive{
+        left: -100px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &__title{
+        margin-bottom: 15px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    &__fields{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 30px;
+        max-width: 570px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-lable{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        width: 270px;
+        height: 56px;
+        padding-left: 25px;
+        border-radius: 100px;
+        background: var(--color-0);
+        cursor: pointer;
+        &__input{
+            display: none;
+            &:checked + .step-lable__icon path{
+                fill: var(--color-2);
+            }
+            &:checked + .step-lable__icon + .step-lable__name{
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__entryname{
+        display: block;
+        padding-left: 16px;
+        font-size: 10px;
+        line-height: 180%;
+        color: rgba(36, 34, 35, 0.60);
+    }
+
+    &__entry{
+        width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 14px;
+        padding-left: 16px;
+        color: rgba(36, 34, 35, 1);
+        border-width: 0 0 1px 0;
+        border-style: solid;
+        border-color: var(--color-11);
+        background: transparent;
+        &::placeholder{
+            color: rgba(36, 34, 35, 0.60);
+        }
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px 30px;
+        margin-top: auto;
+    }
+
+    &__button{
+        max-width: 200px; 
+    }
+
+    &1{
+        .step__button--prev{
+            display: none;
+        }
+    }
+
+}
+
+.afterquiz{
+
+    position: absolute;
+    z-index: 1;
+	top: 0;
+	left: 0;
+    display: flex;
+	width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--color-12);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+    transition: 0.5s;
+
+    @media(max-width: 992px){
+        flex-direction: column;
+    }
+
+    &.is-active{
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: initial;
+    }
+    
+    &__title{
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    &__tagtitle{
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+
+    &__form{
+        max-width: 370px;
+        width: 100%;
+        flex-shrink: 0;
+        padding-top: 87px;
+        padding-bottom: 98px;
+        padding-left: 35px;
+        padding-right: 18px;
+        @media(max-width: 992px){
+            max-width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+
+    &__timerbox{
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 554px;
+        img{
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media(max-width: 992px){
+            height: auto;
+        }
+    }
+
+}
+
+.timer{
+
+    width: 256px;
+    height: 133px;
+    margin-top: auto;
+    margin-bottom: 108px;
+    margin-left: 150px;
+    padding: 20px 25px;
+    border-radius: 14px;
+    background: var(--color-0);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.12);
+
+    @media(max-width: 992px){
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__text{
+        text-align: center;
+    }
+
+    &__count{
+        display: flex;
+        justify-content: center;
+        font-size: 40px;
+        font-weight: 700;
+        color: var(--color-2);
+    }
+
+}
+
+.progress{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 26px;
+    margin-bottom: 30px;
+    background: var(--color-0);
+    border-radius: 50px;
+    &__line{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-radius: 50px;
+        background: repeating-linear-gradient(45deg, var(--color-13), var(--color-13) 10px, var(--color-2) 10px, var(--color-2) 20px);
+        transition: all 1s ease-in-out;
+    }
+    &__counter{
+        font-size: 10px;
+        output{
+            font-weight: 700;
+        }
+    }
+}
+

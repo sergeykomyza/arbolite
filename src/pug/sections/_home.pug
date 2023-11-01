@@ -1,0 +1,23 @@
+.home
+	img.home__bg(src="img/home-bg.webp", alt="@")
+	.container
+		.home__content
+			h1.home__title все блоки тут !!
+			.home__textslider
+				.swiper-pagination
+				.swiper.js-sliderText
+					.swiper-wrapper 
+						each item in [1, 2, 3] 
+							.swiper-slide 
+								p  Лучший выбор блоков для Ваших строительных проектов!!
+			.home-info
+				each item in ['<b>Оплата по факту</b> доставки','<b>Подбор лучших</b> производителей блоков','<b>Надежная</b> доставка']
+					.home-info__item 
+						span.home-info__icon 
+						span.home-info__text !{item}
+			button.button.home__button 
+				span Рассчитать стоимость
+				include ./../layouts/_iconBlueArrowInButton.pug
+		.down-buttonbox.down-buttonbox__home
+			include ./../layouts/_iconArrowSectionDown.pug
+				

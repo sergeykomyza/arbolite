@@ -1,0 +1,31 @@
+section.consultation.consultation-calc
+    .container 
+        .consultation__box 
+            
+            img.consultation__bg(src="img/form2-bg.webp", alt="@")
+            
+            .consultation__info
+                h4.title.consultation__title #[b Расчет точной стоимости] #[br] материалов уже сегодня
+                ul.consultation__list 
+                    each item in ['Всегда в наличии. <b>Любой объем блоков <br> в день обращения</b>','<b>Бесплатная</b> погрузка и разгрузка материала','<b>Бесплатная консультация</b> <br> для Вас и для Ваших строителей','<b>Поможем подобрать оптимальное предложение</b> <br> и проконсультируем по всем вопросам']
+                        li.consultation__item !{item}
+
+            .desktop
+                img.consultation__img(src="img/mujik-3.webp", alt="@")
+
+            .consultation__form
+                form.form(action="#")
+                    .form__field
+                        label.form__label Как вас зовут?
+                        input.form__input(type="text" placeholder="Например, Валентин")  
+                    .form__field
+                        label.form__label Ваш номер телефона
+                        input.form__input.js-maskPhone(type="text" placeholder="+7 (___) ___-__-__") 
+                    button.button.form__button 
+                        span Получить консультацию
+                        include ./../layouts/_iconBlueArrowInButton.pug
+                    .agree
+                        label.agree__wrap
+                            input.agree__input(type="checkbox" checked autocomplete="off")
+                            span.agree__checkbox
+                            span.agree__text Нажимая на кнопку, вы соглашаетесь с #[br] #[a(href="") политикой конфиденциальности ]

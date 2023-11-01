@@ -1,0 +1,53 @@
+.faq{
+    
+    margin-bottom: 100px;
+    
+    &__box{
+    }
+    
+}
+
+.accordeon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 30px;
+
+    @media(max-width: 992px){
+        grid-template-columns: 1fr ;
+    }
+    
+    &__header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 13px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-right: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    &__icon2{
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .3s;
+    }
+    
+    &__item{
+        border-bottom: 1px dashed var(--color-10);
+        &.opened{
+            .accordeon__icon2{
+                transform: translateY(-50%) rotate(-180deg);
+            }
+        }
+    }
+
+    &__inner{
+        padding-bottom: 25px;
+    }
+
+}

@@ -1,0 +1,32 @@
+section.consultation.consultation-spec
+    .container 
+        .consultation__box 
+            
+            img.consultation__bg(src="img/form-bg.webp", alt="@")
+            
+            .consultation__info
+                h4.title.consultation__title #[b Получите консультацию] #[br] специалиста прямо сейчас
+                ul.consultation__list 
+                    each item in ['<b>Уточним</b> размеры и количество блоков','<b>Консультацию специалиста</b> о том, <br> на чем можно экономить, а на чем нет','<b>Рассчитаем смету с точностью 100%</b> <br> и сформируем коммерческое предложение','<b>Согласование времени</b> <br> доставки материалов на строй площадку']
+                        li.consultation__item !{item}
+
+            .desktop
+                img.consultation__img(src="img/mujik-2.webp", alt="@")
+
+            .consultation__form
+                form.form(action="#")
+                    .form__field
+                        label.form__label Как вас зовут?
+                        input.form__input(type="text" placeholder="Например, Валентин")  
+                    .form__field
+                        label.form__label Ваш номер телефона
+                        input.form__input.js-maskPhone(type="text" placeholder="+7 (___) ___-__-__") 
+                    button.button.form__button 
+                        span Получить консультацию
+                        include ./../layouts/_iconBlueArrowInButton.pug
+                    .agree
+                        label.agree__wrap
+                            input.agree__input(type="checkbox" checked autocomplete="off")
+                            span.agree__checkbox
+                            span.agree__text Нажимая на кнопку, вы соглашаетесь с #[br] #[a(href="") политикой конфиденциальности ]
+

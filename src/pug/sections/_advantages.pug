@@ -1,0 +1,23 @@
+-
+    const advantages = [
+        {title: 'Качество без компромиссов', text: ' работаем с лучшими производителями и следим за качеством на каждом этапе производства'},
+        {title: 'Разнообразие ассортимента', text: ' наш каталог включает в себя широкий выбор разных размеров и характеристик, для потребностей любого проекта'},
+        {title: 'Доставка в срок', text: ' ценим ваше время и гарантируем своевременную доставку'},
+        {title: 'Профессиональный консультации', text: ' Наши специалисты всегда готовы помочь вам с выбором правильных материалов и ответить на ваши вопросы'},
+        {title: 'Клиентоориентированный подход', text: ' стремимся удовлетворить все потребности наших клиентов и предоставить качественное обслуживание'},
+        {title: 'Индивидуальный подход', text: ' понимаем, что каждый проект уникален, и предоставляем индивидуальные решения, учитывая специфику'}
+    ]
+
+section.advantages#advantages 
+    img.advantages__bg(src="img/advantages-bg.webp", alt="@")
+    .container 
+        h4.title.advantages__title #[b 6 причин выбирать нас] #[br] для поставки стройматериалов
+        p.tagtitle.advantages__tagtitle самые низкие цены и доставка точно в срок
+        .advantages__box
+            each item, i in advantages 
+                .advantage 
+                    img.advantage__icon(src=`img/advantage-${i}.svg`, alt="@")
+                    h6.advantage__title= item.title 
+                    p.advantage__text= item.text
+    .down-buttonbox.down-buttonbox__advantages
+        include ./../layouts/_iconArrowSectionDown.pug

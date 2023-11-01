@@ -1,0 +1,78 @@
+.instruction{
+
+    margin-bottom: 55px;
+
+    &__title{
+        margin-bottom: 25px;
+    }
+
+    &__box{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        // @media(max-width: 992px){
+        //     grid-template-columns: 1fr;
+        //     gap: 10px;
+        // }
+    }
+    
+    &-step{
+        position: relative;
+        &:not(:last-child){
+            &:after{
+                content: '';
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 35px;
+                height: 1px;
+                border-bottom: 1px dashed var(--color-8);
+                width: 100%;
+                // @media(max-width: 992px){
+                //     left: 35px;
+                //     height: 100%;
+                //     width: 1px;
+                //     border-bottom: none;
+                //     border-left: 1px dashed var(--color-8); 
+                // }
+            }
+        }
+        &__iconbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 14px;
+            border-radius: 50%;
+            border: 1px dashed var(--color-8);
+            background: radial-gradient(circle, var(--color-8) 55%, var(--color-0) 57%);
+        }
+        &__info{
+
+        }
+        &__title{
+            margin-bottom: 6px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        &__text{
+            margin-bottom: 15px;
+            line-height: 157%;
+        }
+        &__contacts{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__phone{
+            margin-bottom: 15px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        &:first-child .instruction-step__iconbox{
+            background: radial-gradient(circle, var(--color-2) 55%, var(--color-0) 57%);
+        }
+    }
+
+}

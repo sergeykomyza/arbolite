@@ -1,0 +1,54 @@
+.help{
+
+    position: relative;
+    overflow: hidden;
+
+    @media(max-width: 992px){
+        padding-bottom: 50px;
+    }
+
+    &__img{
+        margin-bottom: -235px;
+        @media(max-width: 992px){
+            display: none;
+        }
+    }
+
+    &__title{
+        margin-bottom: 15px;
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        @media(max-width: 992px){
+            flex-direction: column;
+        }
+    }
+
+    &-phone{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 25px;
+        gap: 5px;
+        &__text{
+            font-size: 16px;
+        }
+        &__num{
+            font-size: 34px;
+            font-weight: 700;
+            @media(max-width: 992px){
+                font-size: 25px;
+            }
+        }
+    }
+
+    &__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-shrink: 0;
+    }
+
+}
