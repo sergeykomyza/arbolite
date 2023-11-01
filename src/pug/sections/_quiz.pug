@@ -10,13 +10,13 @@ section.quiz
 						.progress__counter Вы отвечаете на #[output.progress__count 1] #[b вопрос] из 5
 						.progress__line
 					.quiz__steps
-						.step.step5 
+						.step.step5(data-step="5") 
 							.step__title #[b Укажите населенный пункт куда нужна будет доставка:]
 							.step__fields 
 								span.step__entryname Название населенного пункта
 								input.step__entry(type="text" placeholder="Например, Москва")
 							+buttons('', 'disabled')
-						.step.step4
+						.step.step4(data-step="4")
 							.step__title #[b Что планируете строить?]
 							.step__fields
 								each item in ['Дачный дом','Коттедж','Гараж','Дом для постоянного проживания']
@@ -26,23 +26,23 @@ section.quiz
 											path(fill="#F6F8FA" d='M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z')
 										span.step-lable__name= item 
 							+buttons('', 'disabled')
-						.step.step3
+						.step.step3(data-step="3")
 							.step__title #[b Укажите необходимое количество кубов (м³)] #[br] (если нужен расчёт, можно пропустить):
 							.step__fields 
 								span.step__entryname Сколько вам нужно материала?
 								input.step__entry(type="text" placeholder="Например, 105")
 							+buttons('', '')
-						.step.step2 
+						.step.step2(data-step="2") 
 							.step__title #[b Какой блок вам нужен?] (можно выбрать несколько видов)
 							.step__fields
 								each item in ['Стеновой','U-образный','Перегородочный', 'Перемычка']
 									label.step-lable
-										input.step-lable__input(type="radio" name="step2")
+										input.step-lable__input.step-label__input--checkbox(type="checkbox" name="step2")
 										svg.step-lable__icon(width='20px' viewBox='0 0 512 512')
 											path(fill="#F6F8FA" d='M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z')
 										span.step-lable__name= item 
 							+buttons('', 'disabled')
-						.step.step1
+						.step.step1(data-step="1")
 							.step__title #[b Из какого материала вам нужен блок?] 
 							.step__fields
 								each item in ['Арболит','Газоблок','Керамический блок']

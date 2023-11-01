@@ -276,23 +276,33 @@ const quiz = ()=> {
             let count = i+1
             let step = i+1
             progressLine.style.width = step*20 + '%'
-            if(count >= 5){
+
+            console.log(count)
+            if(i >= 5){
                 progressCount.innerHTML = 5
             } else {
-                progressCount.innerHTML = +(count+1)
+                progressCount.innerHTML = count+1
             }
         })
     }
     document.querySelector('.quiz__steps').addEventListener('input', function(e){
         const input = e.target.closest('.step-lable__input')
         const inputText = e.target.closest('.step__entry')
+        const inputCheckbox = e.target.closest('.step-label__input--checkbox')
         const nextBtn = e.target.closest('.step').querySelector('.step__button--next')
         const prevBtn = e.target.closest('.step').querySelector('.step__button--prev')
-        if(input){
+        if(input && !inputCheckbox){
             input.closest('.step').classList.add('is-deactive')
             nextBtn.removeAttribute('disabled')
         }
         if(inputText){
+            if(inputText.value.length > 0){
+                nextBtn.removeAttribute('disabled')
+            } else {
+                nextBtn.setAttribute('disabled', 'disabled')
+            }
+        }
+        if(inputCheckbox){
             nextBtn.removeAttribute('disabled')
         }
         progressBar()
@@ -306,6 +316,9 @@ const quiz = ()=> {
         if(prevBtn){
             e.preventDefault()
             nextStep.classList.remove('is-deactive')
+            if(nextStep.dataset.step == 1){
+                progressCount.innerHTML = 1
+            }
         }
         if(nextBtn){
             e.preventDefault()

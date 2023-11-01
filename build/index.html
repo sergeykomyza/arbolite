@@ -155,7 +155,7 @@
                 <div class="progress__line"></div>
               </div>
               <div class="quiz__steps">
-                <div class="step step5"> 
+                <div class="step step5" data-step="5"> 
                   <div class="step__title"><b>Укажите населенный пункт куда нужна будет доставка:</b></div>
                   <div class="step__fields"> <span class="step__entryname">Название населенного пункта</span>
                     <input class="step__entry" type="text" placeholder="Например, Москва"/>
@@ -173,7 +173,7 @@
                         </button>
                       </div>
                 </div>
-                <div class="step step4">
+                <div class="step step4" data-step="4">
                   <div class="step__title"><b>Что планируете строить?</b></div>
                   <div class="step__fields">
                     <label class="step-lable">
@@ -214,7 +214,7 @@
                         </button>
                       </div>
                 </div>
-                <div class="step step3">
+                <div class="step step3" data-step="3">
                   <div class="step__title"><b>Укажите необходимое количество кубов (м³)</b> <br/> (если нужен расчёт, можно пропустить):</div>
                   <div class="step__fields"> <span class="step__entryname">Сколько вам нужно материала?</span>
                     <input class="step__entry" type="text" placeholder="Например, 105"/>
@@ -232,29 +232,29 @@
                         </button>
                       </div>
                 </div>
-                <div class="step step2"> 
+                <div class="step step2" data-step="2"> 
                   <div class="step__title"><b>Какой блок вам нужен?</b> (можно выбрать несколько видов)</div>
                   <div class="step__fields">
                     <label class="step-lable">
-                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <input class="step-lable__input step-label__input--checkbox" type="checkbox" name="step2"/>
                       <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
                         <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
                       </svg><span class="step-lable__name">Стеновой</span>
                     </label>
                     <label class="step-lable">
-                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <input class="step-lable__input step-label__input--checkbox" type="checkbox" name="step2"/>
                       <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
                         <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
                       </svg><span class="step-lable__name">U-образный</span>
                     </label>
                     <label class="step-lable">
-                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <input class="step-lable__input step-label__input--checkbox" type="checkbox" name="step2"/>
                       <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
                         <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
                       </svg><span class="step-lable__name">Перегородочный</span>
                     </label>
                     <label class="step-lable">
-                      <input class="step-lable__input" type="radio" name="step2"/>
+                      <input class="step-lable__input step-label__input--checkbox" type="checkbox" name="step2"/>
                       <svg class="step-lable__icon" width="20px" viewBox="0 0 512 512">
                         <path fill="#F6F8FA" d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path>
                       </svg><span class="step-lable__name">Перемычка</span>
@@ -273,7 +273,7 @@
                         </button>
                       </div>
                 </div>
-                <div class="step step1">
+                <div class="step step1" data-step="1">
                   <div class="step__title"><b>Из какого материала вам нужен блок?</b> </div>
                   <div class="step__fields">
                     <label class="step-lable">
