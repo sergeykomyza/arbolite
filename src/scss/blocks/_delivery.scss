@@ -1,0 +1,28 @@
+.delivery{
+
+    margin-bottom: 70px;
+
+    &__box{
+        display: grid;
+        grid-template-columns: 1fr 465px;
+        gap: 30px;
+        align-items: center;
+        @media(max-width: 992px){
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title{
+        margin-bottom: 25px;
+    }
+
+    &__tagtitle{
+        line-height: 140%;
+    }
+
+    &__img{
+        max-width: 465px;
+        width: 100%;
+    }
+
+}

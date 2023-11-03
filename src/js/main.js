@@ -5,7 +5,7 @@ const headerLogic = () => {
     const gamburger = document.querySelector('.header__burger')
 
     $('.js-scroll').click(function () {
-        var scroll_elem = $(this).attr('href');
+        var scroll_elem = $(this).attr('href') || $(this).attr('data-src');
         $('html, body').animate({
             scrollTop: $(scroll_elem).offset().top
         }, 1000);
