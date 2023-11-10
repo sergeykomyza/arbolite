@@ -125,14 +125,14 @@ const tabs = () => {
 
         tabsHeader.style.height = tabsHeaderBox.clientHeight + 'px'
     }
-    tabs[0].classList.add('is-active')
+    tabs[0].classList.add('is-activeTab')
     if (document.documentElement.clientWidth < 992) {
         runner.innerHTML = tabs[0].innerHTML
     }
     contents.forEach(item => {
-        item.classList.remove('is-active')
+        item.classList.remove('is-activeTab')
     })
-    contents[0].classList.add('is-active')
+    contents[0].classList.add('is-activeTab')
 
     tabs.forEach((item, i) => {
 
@@ -146,13 +146,13 @@ const tabs = () => {
             }
 
             tabs.forEach(elem => {
-                elem.classList.remove('is-active')
+                elem.classList.remove('is-activeTab')
             })
-            this.classList.add('is-active')
+            this.classList.add('is-activeTab')
             contents.forEach(item => {
-                item.classList.remove('is-active')
+                item.classList.remove('is-activeTab')
             })
-            contents[i].classList.add('is-active')
+            contents[i].classList.add('is-activeTab')
         })
         if (document.documentElement.clientWidth > 992) {
             item.addEventListener('mouseover', function () {
@@ -160,10 +160,10 @@ const tabs = () => {
                 let itemHeight = this.offsetHeight
                 let itemLeft = this.offsetLeft
                 let itemTop = this.offsetTop
-                if (!item.classList.contains('is-active')) {
+                if (!item.classList.contains('is-activeTab')) {
                     item.querySelector('.tabs__name').style.color = "#FFF"
                     tabs.forEach(elem => {
-                        if (elem.classList.contains('is-active')) {
+                        if (elem.classList.contains('is-activeTab')) {
                             elem.querySelector('.tabs__name').style.color = "#000"
                         }
                     })
@@ -177,16 +177,16 @@ const tabs = () => {
                 }
             })
             item.addEventListener('mouseout', function () {
-                if (!item.classList.contains('is-active')) {
+                if (!item.classList.contains('is-activeTab')) {
                     item.querySelector('.tabs__name').style.color = "#000"
                     tabs.forEach(elem => {
-                        if (elem.classList.contains('is-active')) {
+                        if (elem.classList.contains('is-activeTab')) {
                             elem.querySelector('.tabs__name').style.color = "#FFF"
                         }
                     })
                 }
-                runner.style.width = document.querySelector('.tabs__button.is-active').offsetWidth + "px"
-                runner.style.left = document.querySelector('.tabs__button.is-active').offsetLeft + "px"
+                runner.style.width = document.querySelector('.tabs__button.is-activeTab').offsetWidth + "px"
+                runner.style.left = document.querySelector('.tabs__button.is-activeTab').offsetLeft + "px"
 
             })
         }
@@ -383,7 +383,7 @@ headerLogic()
 inputMask()
 sliders()
 tabs()
-window.addEventListener('scroll', tabs)
+// window.addEventListener('scroll', tabs)
 accordeons('.accordeon', '.accordeon__item', '.accordeon__header', '.accordeon__content', 'accordeon__item opened', 'accordeon__item closed')
 quiz()
 map()
